@@ -1,26 +1,22 @@
-﻿ void methodArray (string [] array){
-     for (int i=0; i<array.Length; i++){
-//         Console.Writeline([arr])        
-         //if (array[i]!=string.Empty){
-        //Console.WriteLine (array[i].Length);
+﻿void methodArray (string [] array){
+     for (int i=0; i<array.Length; i++){      
         if(array[i].Length<=3){
-        Console.WriteLine (array[i]);
-        }
-//         // int [] newArr = new int [arr[i]];
-//        // Array.Copy(arr,1, newArr,0, newArr.Length);
-//         //Console.Write(newArr);
-//         //return int [] newArr;
+        string[] newarr = new string[array.Length];
+        newarr[i]=array[i];
+        Console.WriteLine(newarr[i]); 
         }
      }
+        Console.WriteLine(); 
+}
 
-
-// void Print(string [] Array){
-//     for (int i=0; i<Array.Length; i++){
-//         Console.Write(" " + Array[i]);
-//     }
-//     Console.WriteLine();
-// }
+void Print(string [] Array){
+    for (int i=0; i<Array.Length; i++){
+        Console.WriteLine(Array[i]);
+    }
+    Console.WriteLine();
+}
 
 string [] array = {"hello", "2", "world", ":-)"};
+
 methodArray(array);
-//Print(array);
+Print(array);
